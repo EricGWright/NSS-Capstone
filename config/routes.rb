@@ -1,5 +1,6 @@
 NSSCapstone::Application.routes.draw do
   get "home/index"
+  resources :artists, :albums
 
   # devise_for :users
 
