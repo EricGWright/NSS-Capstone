@@ -1,7 +1,4 @@
-<h2>Albums List</h2>
-
-<%= link_to 'Add Album', new_album_path %>
-<br /><br />
+<h3>Albums List <button class="btn"><%= link_to 'Add Album', new_album_path %></button></h3>
 
 <table>
   <tr>
@@ -17,13 +14,11 @@
     <td><%= album.artist %></td>
     <td><%= link_to album.album, album %></td>
     <td><%= album.age %></td>
-    <td><%= link_to 'Edit', edit_album_path(album) %></td>
-    <td><%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <div class="btn-group">
+      <td><button class="btn"><%= link_to 'Edit', edit_album_path(album) %></button></td>
+      <td><button class="btn"><%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+    </div>
   </tr>
 <% end %>
 </table>
-
-<br />
-<%= link_to 'View Artists', artists_path %>
-<br /><br />
-<%= link_to 'Home', root_path %>
+<button class="btn"><%= link_to 'View Artists', artists_path %></button>
