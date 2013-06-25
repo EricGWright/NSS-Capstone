@@ -4,7 +4,7 @@ NSSCapstone::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
-  resources :users, :artists, :albums
+  resources :users, :artists, :albums, :tracks
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

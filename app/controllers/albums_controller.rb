@@ -1,7 +1,8 @@
 class AlbumsController < ApplicationController
+  helper_method :sort_column, :sort_direction
 
   def index
-    @albums = Album.all
+    @albums = Album.order(sort_column + " " + sort_direction)
 
     respond_to do |format|
       format.html
@@ -68,4 +69,15 @@ class AlbumsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+
+  def sort_column
+    Album.column_names.include?(params[:sort]) ? params[:sort] : "album"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
+
 end

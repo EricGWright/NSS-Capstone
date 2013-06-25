@@ -1,0 +1,25 @@
+<h4>Tracks List</h4>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th><%= sortable "album" %></th>
+      <th><%= sortable "track" %></th>
+      <th><%= sortable "listens" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracks.each do |track| %>
+      <tr>
+        <td><%= track.album %></td>
+        <td><%= link_to track.track, track %></td>
+        <td><%= track.listens %></td>
+        <div class="btn-group">
+          <td><button class="btn"><%= link_to 'Edit', edit_track_path(track) %></button></td>
+          <td><button class="btn"><%= link_to 'Delete', track, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<button class="btn"><%= link_to 'Add Track', new_track_path %></button>
