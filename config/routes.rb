@@ -1,10 +1,10 @@
 NSSCapstone::Application.routes.draw do
-  get "home/index"
-  resources :artists, :albums
-
-  # devise_for :users
-
-  root :to => 'home#index'
+  authenticated :user do
+    root :to => 'home#index'
+  end
+  root :to => "home#index"
+  devise_for :users
+  resources :users, :artists, :albums
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,4 +1,9 @@
-<h1>View Artists or Albums?</h1>
+<h1>Home</h1>
+<% @users.each do |user| %>
+  <p>User: <%=link_to user.name, user %></p>
+<% end %>
+
+<h2>View Artists or Albums?</h2>
 <ul>
   <li><%= link_to 'Artists', artists_path %></li>
   <br />
