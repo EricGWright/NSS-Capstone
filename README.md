@@ -6,10 +6,16 @@ Purpose
 
 This is a project for the Nashville Software School.  We are developing an app that uses Ruby on Rails.
 
+User Stories:
+==============
+* As a DJ I want to know what music is currently popular so that I can stay current and be able to know what new music is worth playing.
+* As a fan of certain artists I want to know what people are listening to so that I can stay familiar with my favorite artists.
+
 Usage:
 ======
 
-This is a standard rails app.  To run the tests, use `rake`.  To run the app, use `rails s`.
+* This is a standard rails app.  To run the tests, use `rake`.  To run the app, use `rails s`.
+* To view the app online go to nss-capstone.herokuapp.com.
 
 Features:
 =========
@@ -22,18 +28,18 @@ ToDo/Project State:
 ===================
 
 V1
-x rvmrc
-x rails new
-x write tests
-x create model & migration
-x create controller & index view/action
-x ability to add artists
-x ability to add albums
-x ability to add tracks
-x sortable view for artists, albums, and tracks
+* x rvmrc
+* x rails new
+* x write tests
+* x create model & migration
+* x create controller & index view/action
+* x ability to add artists
+* x ability to add albums
+* x ability to add tracks
+* x sortable view for artists, albums, and tracks
 
 V2
-x ability to log-in
+* x ability to log-in
 * custom list capability based on user input
 * ability to favorite tracks
 * ability to have separate playlists for each user
@@ -43,11 +49,11 @@ x ability to log-in
 Changelog:
 ==========
 
-2013-06-11: Started Project
-2013-06-15: Basic app with artist table
-2013-06-20: Added albums page
-2013-06-24: Added users log-in
-2013-06-25: Added tracks page, bootstrap, sorting
+* 2013-06-11: Started Project
+* 2013-06-15: Basic app with artist table
+* 2013-06-20: Added albums page
+* 2013-06-24: Added users log-in
+* 2013-06-25: Added tracks page, bootstrap, sorting
 
 Author:
 =======
