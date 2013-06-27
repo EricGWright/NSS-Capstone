@@ -14,25 +14,40 @@ This is a standard rails app.  To run the tests, use `rake`.  To run the app, us
 Features:
 =========
 
-1. User can enter artist(s)
-2. User can view list of tracks
+1. User can enter artist(s), album(s), and/or track(s)
+2. User can view list of artists, albums, and tracks
+3. User can sort any column of any table
 
 ToDo/Project State:
 ===================
 
-* rvmrc
-* rails new
-* write tests
-* create model & migration
-* create controller & index view/action
-* list tracks for artist
-* multiple artists
-* sort tracks
+V1
+x rvmrc
+x rails new
+x write tests
+x create model & migration
+x create controller & index view/action
+x ability to add artists
+x ability to add albums
+x ability to add tracks
+x sortable view for artists, albums, and tracks
+
+V2
+x ability to log-in
+* custom list capability based on user input
+* ability to favorite tracks
+* ability to have separate playlists for each user
+* last.fm api capability
+
 
 Changelog:
 ==========
 
 2013-06-11: Started Project
+2013-06-15: Basic app with artist table
+2013-06-20: Added albums page
+2013-06-24: Added users log-in
+2013-06-25: Added tracks page, bootstrap, sorting
 
 Author:
 =======
