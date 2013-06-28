@@ -4,12 +4,21 @@ A Rails App For Making Playlists
 Purpose
 ========
 
-This is a project for the Nashville Software School.  We are developing an app that uses Ruby on Rails.
+* This is a project for the Nashville Software School.  We are developing an app that uses Ruby on Rails.
+* The goal is to expand and add to my Web Development Foundations capstone project so that specific albums can be chosen and a playlist of tracks from those albums will be generated.
 
 User Stories:
 ==============
 * As a DJ I want to know what music is currently popular so that I can stay current and be able to know what new music is worth playing.
 * As a fan of certain artists I want to know what people are listening to so that I can stay familiar with my favorite artists.
+
+Things Learned and Challenges Encountered:
+===========================================
+
+* Learned to subdivide as much as possible and to think carefully about how the data is clustered and flows
+*	Learning cucumber and BBD vs. TDD
+*	Understanding the vast number of files and how they all tie together (even more so for this project)
+*	Learning how to use heroku and remembering to run migrations, etc. on heroku in addition to locally
 
 Usage:
 ======
