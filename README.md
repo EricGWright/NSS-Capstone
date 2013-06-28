@@ -12,11 +12,13 @@ User Stories:
 * As a DJ I want to know what music is currently popular so that I can stay current and be able to know what new music is worth playing.
 * As a fan of certain artists I want to know what people are listening to so that I can stay familiar with my favorite artists.
 
-Things Learned and Challenges Encountered:
+Things Learned / Challenges Encountered:
 ===========================================
 
-* Learned to subdivide as much as possible and to think carefully about how the data is clustered and flows
-*	Learning cucumber and BBD vs. TDD
+* Learned to subdivide as much as possible
+* Think carefully about how the data is clustered and flows
+*	Learning new gems such as Devise and Cucumber
+* Speaking of Cucumber: BBD vs. TDD
 *	Understanding the vast number of files and how they all tie together (even more so for this project)
 *	Learning how to use heroku and remembering to run migrations, etc. on heroku in addition to locally
 
